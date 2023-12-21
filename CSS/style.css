@@ -1,21 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&family=Saira+Condensed:wght@300;400;500;600;700;800&display=swap");
+
 body {
   font-family: "PT Sans Caption", sans-serif;
-} 
+}
+
 ::selection {
   background-color: #fec260;
   color: #352e28;
-} 
-section {
-  height: 100vh;
+}
+
+main {
+  min-height: 100vh;
   background-color: #f7ecde;
 }
-section h1 {
+
+main h1 {
   font-size: 50px;
   font-family: "Pacifico", cursive;
   color: #352e28;
   isolation: isolate;
 }
-section h1::before {
+
+main h1::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -26,37 +32,32 @@ section h1::before {
   transition: height 350ms;
   z-index: -1;
 }
-section h1:hover::before {
+
+main h1:hover::before {
   height: 50%;
 }
-.item {
+
+.bookmark-body {
   border-width: 2px 0 2px 0;
   border-style: dotted;
   border-color: #352e28;
 }
-.item h2 {
+
+.bookmark-body h2 {
   font-family: "Righteous", cursive;
   font-size: 25px;
-  background-image: linear-gradient(to right, #3ca55c, #b5ac49); 
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-} 
-  
-.form-control:focus {  
+}
+.form-control:focus {
   color: #212529;
-  background-color: #fff; 
+  background-color: #fff;
   border-color: #d99c39;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem #fec26055; 
-} 
-.btn-submit {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #d1512d;
-  --bs-btn-border-color: #d1512d;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #bb4120;
-  --bs-btn-hover-border-color: #a03315;
+  box-shadow: 0 0 0 0.25rem #fec26055;
 }
+
 .btn-delete {
   --bs-btn-color: #fff;
   --bs-btn-bg: #eb1d36;
@@ -65,6 +66,16 @@ section h1:hover::before {
   --bs-btn-hover-bg: #d30820;
   --bs-btn-hover-border-color: #ba081d;
 }
+
+.btn-submit {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #d1512d;
+  --bs-btn-border-color: #d1512d;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #bb4120;
+  --bs-btn-hover-border-color: #a03315;
+}
+
 .btn-visit {
   --bs-btn-color: #fff;
   --bs-btn-bg: #9eb23b;
@@ -73,9 +84,11 @@ section h1:hover::before {
   --bs-btn-hover-bg: #8a9e23;
   --bs-btn-hover-border-color: #6e8018;
 }
+
 table {
   vertical-align: middle !important;
 }
+
 .box-info {
   background-color: #0007;
 }
@@ -99,11 +112,13 @@ table {
 .rules i {
   color: #bb4120;
 }
+
 .circles span {
   display: block;
   width: 20px;
   height: 20px;
 }
+
 .circles span:nth-child(1) {
   background-color: #f15f5d;
 }
@@ -112,5 +127,9 @@ table {
 }
 .circles span:nth-child(3) {
   background-color: #4db748;
+}
+
+.logo {
+  width: 40px;
 }
 
